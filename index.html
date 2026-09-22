@@ -8,6 +8,7 @@
   <script>
     const META_APP_ID = '1068351522633396';
     const META_CONFIG_ID = '4424226101126837';
+    const META_REDIRECT_URI = 'https://ponticellicontabil.github.io/ponticelli-whatsapp-connect/';
 
     let metaPronta = false;
     let conexaoEmAndamento = false;
@@ -128,6 +129,7 @@
           atualizarStatus(motivo, 'atencao');
         }, {
           config_id: META_CONFIG_ID,
+          redirect_uri: META_REDIRECT_URI,
           response_type: 'code',
           override_default_response_type: true,
           extras: {
@@ -162,7 +164,7 @@
       --verde-claro: #e8f8f4;
       --texto: #16324a;
       --fundo: #f4f8fb;
-           --borda: #dce8ef;
+      --borda: #dce8ef;
     }
 
     * { box-sizing: border-box; }
